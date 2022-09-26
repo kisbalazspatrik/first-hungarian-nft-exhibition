@@ -1071,7 +1071,7 @@ abstract contract Ownable is Context {
 
 pragma solidity ^0.8.7;
 
-contract XXXX is Ownable, ERC721B {
+contract FirstHungarianOnlineNFTExhibition is Ownable, ERC721B {
 
     using Strings for uint256;
     
@@ -1079,7 +1079,7 @@ contract XXXX is Ownable, ERC721B {
 
     constructor(
         string memory baseUri
-    ) ERC721B("XXXX", "XXXX") { 
+    ) ERC721B("First Hungarian Online NFT Exhibition", "FHONE") { 
         _tokenBaseURI = baseUri;
     }
 
