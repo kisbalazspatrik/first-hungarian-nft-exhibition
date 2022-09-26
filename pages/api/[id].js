@@ -16,7 +16,7 @@ const collectibleApi = async(req, res) => {
         metadata = {
           "name": `MetaScyra`,
           "description": "First Hungarian Online NFT Exhibition",
-          "image": `ipfs://QmTw271wByXEDDGjE5yyihLd6PEpmUkLE8uz8smGwziAtN/${query}.jpg`,
+          "image": `ipfs://QmT5k1TU9rvNq6CybARMyXVabaibCdN3HZs2kmiV2TT2Jc/MetaScyra.gif`,
           "attributes": attributes
         }
         break;
