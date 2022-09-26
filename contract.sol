@@ -1081,11 +1081,18 @@ contract FirstHungarianOnlineNFTExhibition is Ownable, ERC721B {
         string memory baseUri
     ) ERC721B("First Hungarian Online NFT Exhibition", "FHONE") { 
         _tokenBaseURI = baseUri;
+        mintInitialTokens();
     }
 
     /* ---- Functions ---- */
 
-    function gift(address _to, uint256 _reserveAmount) external onlyOwner {
+    function mintInitialTokens() public onlyOwner {
+        for (uint256 i = 0; i < 12; i++) {
+            _safeMint(msg.sender, i);
+        }
+    }
+
+    function mintNewToken(address _to, uint256 _reserveAmount) external onlyOwner {
         for (uint256 i = 0; i < _reserveAmount; i++) {
             uint mintIndex = totalSupply();
             _safeMint( _to, mintIndex );
