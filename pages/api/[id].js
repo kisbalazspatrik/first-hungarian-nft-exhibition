@@ -9,7 +9,7 @@ const collectibleApi = async (req, res) => {
       "value": "First Hungarian Online NFT Exhibition"
     }];
 
-    const description = "First Hungarian Online NFT Exhibition";
+    const description = "NFTs of the 'first Hungarian online NFT exhibition' collection organized in 2022. These are free NFTs that were raffled among the exhibition participants. Each NFT contains the work of a Hungarian NFT creator.";
 
     switch (query) {
       case '0':
