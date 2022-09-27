@@ -1087,7 +1087,7 @@ contract FirstHungarianOnlineNFTExhibition is Ownable, ERC721B {
     /* ---- Functions ---- */
 
     function mintInitialTokens() public onlyOwner {
-        for (uint256 i = 0; i < 12; i++) {
+        for (uint256 i = 0; i < 13; i++) {
             _safeMint(msg.sender, i);
         }
     }

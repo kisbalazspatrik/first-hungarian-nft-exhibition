@@ -108,6 +108,14 @@ const collectibleApi = async (req, res) => {
           "attributes": attributes
         }
         break;
+      case '12':
+        metadata = {
+          "name": `Ferenc Luliak Luluart`,
+          "description": description,
+          "image": `ipfs://QmfQHFnUVmeqWr7wMWK3bLSnk9rcL9RRywC5MSotwGn9eZ`,
+          "attributes": attributes
+        }
+        break;
       default:
         metadata = {
           "name": `Default Token`,
